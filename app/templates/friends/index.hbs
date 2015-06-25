@@ -6,6 +6,8 @@
       {{#link-to 'friends.show' friend}}
         {{friend.fullName}}
       {{/link-to}}
+      |
+      <a href="#" {{action "delete" friend}}>Delete</a>
     </li>
   {{/each}}
 </ul>
