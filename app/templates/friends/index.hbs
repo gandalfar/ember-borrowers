@@ -1,0 +1,11 @@
+<h2>Total friends: {{model.length}}</h2>
+
+<ul>
+  {{#each friend in model}}
+    <li>
+      {{#link-to 'friends.show' friend}}
+        {{friend.fullName}}
+      {{/link-to}}
+    </li>
+  {{/each}}
+</ul>
