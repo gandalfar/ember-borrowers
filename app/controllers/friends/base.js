@@ -14,7 +14,6 @@ export default Ember.Controller.extend({
     }
   ),
   actions: {
-    // Why are these actions called everytime I click into form field?
     save: function() {
       if (this.get('isValid')) {
         var _this = this;
